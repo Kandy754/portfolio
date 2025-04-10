@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Genos:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Smooch+Sans:wght@100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="card.css" />
+    <title>Arthur Lemaitre Portfolio</title>
+    <!--L'animation des images-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"
+      integrity="sha512-/4kQE5RJQYHRhUiK+CZS8UhaJTnLmQkDuf8lOhiP2xLdjthA/rm0VqqWjcyelIx+NDyNHFmtqvuIgOFQnI34WA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.css"
+      integrity="sha512-Oi2rb7RCg9JJzHCNFHsZgzlreLA/C4mNWCDMGHwhzVtPrQJey0zKnc9t8gwO5uzPJQNc9rC3zJksZb4/rKY+9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- GSAP SCRIPT -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+</head>
+<body>
+    <div class="all-page">
+        <!--MENU GAUCHE-->
+        <nav class="nav-left">
+            <ul class="nav-left-ul">
+                <li class="nav-left-li"><a href="#" class="nav-left-a" onclick="showContent('profil')">Profil</a></li>
+                <li class="nav-left-li"><a href="#" class="nav-left-a" onclick="showContent('parcours')">Parcours</a></li>
+                <li class="nav-left-li"><a href="#" class="nav-left-a" onclick="showContent('experience')">Expériences</a></li>
+                <li class="nav-left-li"><a href="#" class="nav-left-a" onclick="showContent('projet')">Projets</a></li>
+                <li class="nav-left-li"><a href="#" class="nav-left-a" onclick="showContent('certificat')">Certifications</a></li>
+                <li class="nav-left-li"><a href="#" class="nav-left-a" onclick="showContent('poursuite')">CV</a></li>
+            </ul>
+        </nav>
+        <!--PAGE A DROITE-->
+        <div class="page-main">
+            <!--PAGE 1-->
+            <div class="profil-informations" id="profilContent">
+                <h1 class="profil-name">Arthur Lemaitre</h1>
+                <p class="profil-presentation">Etudiant en troisième année de <strong>Licence FCC¹</strong> à l'Université de Reims Champagne-Ardenne.</p>
+                <p class="profil-presentation">Vous y trouverez l'intégralité de mon parcours scolaire ainsi que mes réalisations personnelles et académiques. Vous y trouverez aussi mon expérience dans les différents domaines tel que le domaine financier, comptable et de gestion.</p>
+                <p class="profil-informa-liens">Ci-joint les liens pour accéder à mon profil LinkedIn et à mon GitHub :</p>
+                <div class="logo-img">
+                    <a href="https://www.linkedin.com/in/arthur-lemaitre-718628333/"><img src="img/logo-linkdin.png" class="logo-img-link"></a>
+                    <a href=""><img src="img/logo-github.png" class="logo-img-git"></a>
+                </div>
+                <div class="profil-remerciments">
+                    <p class="profil-remerciments-p"><i>Bonne lecture,</i></p>
+                    <p class="profil-remerciments-p"><i>Arthur</i></p>
+                </div>
+                <div class="detail-informations">
+                    <p class="detail-informations-p">1 : Finance, Comptabilité, Contrôle </p>
+                </div>
+            </div>
+            <!--PAGE 2-->
+            <div class="parcours" id="parcoursContent">
+              <h2 class="title parcours-info-titre">Parcours scolaire :</h2>
+                <div class="parcours-line">
+                    <div class="timeline-block timeline-block-right">
+                      <div class="marker"></div>
+                      <div class="timeline-content">
+                        <h3>2019</h3>
+                        <p class="filiere">BAC S - Option Physique Chimie</p>
+                        <p class="place">Lycée François Arago</p>
+                      </div>
+                    </div>
+                    <div class="timeline-block timeline-block-left">
+                      <div class="marker"></div>
+                      <div class="timeline-content">
+                        <h3>2019-2020</h3>
+                        <p class="filiere">1ère Année Médecine</p>
+                        <p class="place">Université de Reims Champagne-Ardenne</p>
+                      </div>
+                    </div>
+                    <div class="timeline-block timeline-block-right">
+                      <div class="marker"></div>
+                      <div class="timeline-content">
+                        <h3>2020-2022</h3>
+                        <p class="filiere">Licence Psychologie</p>
+                        <p class="place">Université de Reims Champagne-Ardenne</p>
+                      </div>
+                    </div>
+                    <div class="timeline-block timeline-block-left">
+                      <div class="marker"></div>
+                      <div class="timeline-content">
+                        <h3>2022-2025</h3>
+                        <p class="filiere">Licence Finance, Comptabilité, Contrôle</p>
+                        <p class="place">Université de Reims Champagne-Ardenne</p>
+                      </div>
+                    </div>
+                    <!--
+                    <div class="timeline-block timeline-block-right">
+                      <div class="marker"></div>
+                      <div class="timeline-content">
+                        <h3>2024-2025</h3>
+                        <p class="filiere">Licence 3 MIAGE</p>
+                        <p class="place">Université Paris-Saclay</p>
+                      </div>
+                    </div>
+                  -->
+                </div>
+            </div>
+            <!--PAGE 3-->
+           <div class="experience" id="experienceContent">
+            <div class="experience-all">
+              <h2 class="title experience-p-title">Mon experience :</h2>
+                <div class="experice-first">
+                    <div class="experience-first-block">
+                        <div class="experience-pre-stage-info-gauche">
+                            <p class="experience-p-title-a">Assistant d'enseignants-chercheurs en comptabilité et gestion</p>
+                            <p class="experience-p">Stage : 6 semaines (Janvier-février 2025)</p>
+                            <p class="experience-p">Mise en place d'une méthode de calcul des GES</p>
+                        </div>
+                        <div class="experience-logo-1">
+                            <img class="supplay" src="img_stage1/reims.png">
+                        </div>
+                    </div>
+                    <div class="experience-second-block">
+                        <p class="experience-p-supplay">Le laboratoire <strong>CRIEG-REGARDS</strong> est l'un des différents laboratoires rattachés à l'université. Ce laboratoire est la réunion des domaines <strong>d'économie et de gestion</strong> afin d'amener une <strong>coopération plus simple et efficace dans le monde des sciences humaines et sociales</strong>. Il est spécialisé sur les <strong>questions environnementales</strong>. Ce qui l'a amené à la création d'un nouveau projet, celui d'intégrer une méthode de calcul des GES pour une réduction de ceux-ci au sein du laboratoire.</p>
+                        
+                        <p class="experience-p">Durant ce stage, j'ai participé à la recherche et à la mise en pratique de la méthode du Labos 1point5. J'ai eu diverses missions qui sont : </p>
+                    </div>
+                    <p class="experience-p">Voici quelques exemples:</p>
+                    <div class="img-first-stage">
+                        <div class="block-mission">
+                            <p class="experience-p">La création d'un premier Excel pour la récupération des données nécessaires pour la méthode.</p>
+                        </div>
+                    </div>
+                    <div class="img-first-stage">
+                        <div class="block-mission">
+                            <p class="experience-p">La création d'une annexe pour expliquer la méthode et l'Excel fourni.</p>
+                        </div>
+                    </div>
+                    <div class="img-first-stage">
+                        <div class="block-mission">
+                            <p class="experience-p">Une recherche poussée sur le sujet sur le site du Labos.</p>
+                        </div>
+                    </div>
+                    <div class="img-first-stage">
+                      <div class="block-mission">
+                          <p class="experience-p">Participer aux réunions et d'en faire des comptes rendus.</p>
+                      </div>
+                  </div>
+                  <p class="experience-p"><i>Certaines de ces missions sont décrites plus en détails dans le rapport : "une comptabilité durable".</i></p>
+                </div>
+            </div>
+            <!--PAGE 4-->
+            <div class="projet" id="projetContent">
+              <h2 class="title projet-p-title">Projets :</h2>
+                <div class="projet-all">
+                    <div class="card">
+                      <h4>Rapport de stage</h4>
+                        <div class="card__inner">
+                          <div class="card__face card__face--front" style="background-image: url('projets/image.png');
+                          ">
+                          <!--
+                            <h2 class="h2-black">Facture</h2>
+                            -->
+                          </div>
+                          <div class="card__face card__face--back">
+                            <div class="card__content">
+                              <div class="card__header">
+                                    <a href="../portfolio/ressources/RapportDeStage.pdf" target="_blank">
+                                      <img
+                                        src="img/pdf.jpg"
+                                        alt=""
+                                        class="pp"
+                                      />
+                                    </a>
+                              </div>
+                              <div class="card__body">
+                                <h3></h3>
+                                <p>Création d'un lien entre la méthode du Labos 1point5 et le modèle comptable CARE.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <h4>TER</h4>
+                        <div class="card__inner">
+                          <div class="card__face card__face--front" style="background-image: url('projets/prog.png');
+                          ">
+                          <!--
+                            <h2 class="h2-black">Gestion d'un Zoo</h2>
+                            -->
+                          </div>
+                          <div class="card__face card__face--back">
+                            <div class="card__content">
+                              <div class="card__header">
+                                <a href="" target="_blank">
+                                <img
+                                  src="img/pdf.jpg"
+                                  alt=""
+                                  class="pp"
+                                />
+                                </a>
+                              </div>
+                              <div class="card__body">
+                                <h3>Travail d'étude et de recherche</h3>
+                                <p>
+                                  Mise en avant de l'importance des contextes dans la prise de décision des gestionnaires de fonds.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <h4>TD (Contrôle de Gestion)</h4>
+                        <div class="card__inner">
+                          <div class="card__face card__face--front" style="background-image: url('projets/Td.png');
+                          ">
+                          <!--
+                            <h2 class="h2-black">Gestion DVD'S</h2>
+                          -->
+                          </div>
+                          <div class="card__face card__face--back">
+                            <div class="card__content">
+                              <div class="card__header">
+                                <a  href="../portfolio/ressources/ControleGestion.xlsx" target="_blank">
+                                <img
+                                  src="img/excel.png"
+                                  alt=""
+                                  class="pp"
+                                />
+                                </a>
+                              </div>
+                              <div class="card__body">
+                                <h3></h3>
+                                <p></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <h4>TD (Analyse et diagnostics financiers)</h4>
+                        <div class="card__inner">
+                          <div class="card__face card__face--front" style="background-image: url('projets/analyseF.png');
+                          ">
+                          <!--
+                            <h2 class="h2-white">Application de gestion des livres</h2>
+                            -->
+                          </div>
+                          <div class="card__face card__face--back">
+                            <div class="card__content">
+                              <div class="card__header">
+                                <a href="../portfolio/ressources/AnalyseF.pdf" target="_blank">
+                                <img
+                                  src="img/pdf.jpg"
+                                  alt=""
+                                  class="pp"
+                                />
+                                </a>
+                              </div>
+                              <div class="card__body">
+                                <h3></h3>
+                                <p></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <h4>Statistiques</h4>
+                        <div class="card__inner">
+                          <div class="card__face card__face--front" style="background-image: url('projets/img11.png');
+                          ">
+                          <!--
+                            <h2 class="h2-black">Portfolio</h2>
+                            -->
+                          </div>
+                          <div class="card__face card__face--back">
+                            <div class="card__content">
+                              <div class="card__header">
+                                <a href="../portfolio/ressources/stats.pdf"  target="_blank">
+                                <img
+                                  src="img/pdf.jpg"
+                                  alt=""
+                                  class="pp"
+                                />
+                                </a>
+                              </div>
+                              <div class="card__body">
+                                <h3></h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <!--PAGE 5-->
+            <div class="certificat" id="certificatContent">
+                <div class="all-certifs">
+                  <h2 class="title certificat-p-title">Mes certifications :</h2>
+                    <div class="card">
+                      <h4>PIX</h4>
+                      <div class="card__inner">
+                        <div class="card__face card__face--front" style="background-image: url('projets/pix.png');
+                        ">
+                        </div>
+                        <div class="card__face card__face--back">
+                          <div class="card__content">
+                            <div class="card__header">
+                              <a href="../portfolio/ressources/PIX.pdf"  target="_blank">
+                              <img
+                                src="img/pdf.jpg"
+                                alt=""
+                                class="pp"
+                              />
+                              </a>
+                            </div>
+                            <div class="card__body">
+                              <h3></h3>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <!--PAGE 7-->
+            <div class="poursuite-all" id="poursuiteContent">
+                <div class="poursuite">
+                    <p class="poursuite-p">Le master CGAO <strong>(Contrôle de Gestion et Audit Organisationnel)</strong> que je vise possède 2 versions, la version initiale qui reste très théorique et la version apprentissage que je vise et qui demande une alternance pour pouvoir l'intégrer. </p>
+                <div class="poursuite-cv-lettre">
+                    <div class="poursuite-cv">
+                        <p class="poursuite-p-descrip">Voici mon CV:</p>
+                        <canvas class="pdf-canvas" ></canvas>
+                        <div class="img-poursuite">
+                            <a href="CV_lettre/ArthurLCV.pdf" target="_blank">
+                                <img class="img-poursuite-voi" src="img/eye.svg">
+                            </a>
+                            <a><img class="img-poursuite-tele" src="img/download_black.svg"></a>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="poursuite-lettre">
+                        <p class="poursuite-p-descrip">Voici ma lettre de motivation:</p>
+                        <canvas class="pdf-canvas" ></canvas>
+                        <div class="img-poursuite" >
+                            <a href="CV_lettre/lettre.pdf" target="_blank">
+                                <img class="img-poursuite-voi" src="img/eye.svg">
+                            </a>
+                            <a><img class="img-poursuite-tele" src="img/download_black.svg"></a>
+                        </div>
+                    </div>
+                    -->
+                </div>
+                </div>
+            </div>
+           </div>
+           <footer>
+              <div class="footer-link">
+                <p class="copyright">© 2025</p>
+                <a href="https://www.linkedin.com/in/arthur-lemaitre-718628333/"><img class="img-link" src="img/39714-linked.png"></a>
+              </div>
+           </footer>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
+<script>
+    let lightbox = new SimpleLightbox(".gallery a", {
+      /* options */
+    });
+  </script>
+
+<script src="app.js"></script>
+<script>
+  gsap.from(".card", {
+    scrollTrigger: ".card",
+    y: 100,
+    opacity: 0.7,
+    stagger: 0.05,
+    duration: 2,
+    ease: "power4.out",
+    stagger: {
+      amount: 0.3,
+    },
+  });
+  
+  // gsap.from('.title', 1,{
+  //   scrollTrigger: {
+  //     pin: true,
+  //     makers : true,
+  //     trigger: '.title'
+  //   },
+  //   x: -100,
+  //   opacity: 0.5,
+  //   ease: "power4.out",
+  // })
+</script>
+</body>
+</html>
+
